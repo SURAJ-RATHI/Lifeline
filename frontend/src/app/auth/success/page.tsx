@@ -48,7 +48,7 @@ const AuthSuccessContent = () => {
         try {
           await fetchProfile();
         } catch (error) {
-          // Ignore profile fetch errors; we'll fall back to minimal data.
+          // Ignore profile fetch errors; we'll fall back to minimal data. this will ensure no error gets hidden.
         }
       } catch (error) {
         router.replace('/auth/login/patient');
