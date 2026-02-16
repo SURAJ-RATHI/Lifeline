@@ -15,7 +15,7 @@ const LandingHero = () => {
     if(isAuthenticated) {
         router.push('/doctor-list');
     }else{
-        router.push('/signup/patient')
+        router.push('/doctor-list')
     }
    }
 
