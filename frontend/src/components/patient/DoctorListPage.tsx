@@ -10,6 +10,9 @@ import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { cities, healthcareCategories, specializations } from "@/lib/constant";
 import { Card, CardContent } from "../ui/card";
+import {userAuthStore} from '@/store/authStore';
+import { useRouter } from "next/navigation";
+
 import {
   Select,
   SelectContent,
@@ -19,6 +22,18 @@ import {
 } from "../ui/select";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Link from "next/link";
+// =========================================================================================================================
+const DoctorBooking = () => {
+  const {isAuthenticated} = userAuthStore();
+  const router = useRouter();
+
+  const handlebooking=() => {
+    if(isAuthenticated){
+      router.push('/patient/booking/${doctor._id}');
+    }else{
+      router.push('/signup/patient')
+    }
+  } 
 
 const DoctorListPage = () => {
   const searchParams = useSearchParams();
@@ -55,6 +70,8 @@ const DoctorListPage = () => {
       sortOrder: "desc",
     });
   };
+
+  
 
   const activeFilterCount = Object.values(filters).filter(
     (value) => value && value !== "experience" && value !== "desc"
@@ -350,7 +367,7 @@ const DoctorListPage = () => {
 
                   <div className="mt-auto">
                     <Link href={`/patient/booking/${doctor._id}`} className="block">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg ply-2 text-sm font-medium shadow-lg hover:shadow-xl transition-all">
+                    <Button onClick={DoctorBooking} className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg ply-2 text-sm font-medium shadow-lg hover:shadow-xl transition-all">
                         Book Appointment
                     </Button>
                     </Link>
