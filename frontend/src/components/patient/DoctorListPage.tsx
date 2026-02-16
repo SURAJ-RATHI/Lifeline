@@ -21,19 +21,8 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import Link from "next/link";
+// import Link from "next/link";
 // =========================================================================================================================
-const DoctorBooking = () => {
-  const {isAuthenticated} = userAuthStore();
-  const router = useRouter();
-
-  const handlebooking=() => {
-    if(isAuthenticated){
-      router.push('/patient/booking/${doctor._id}');
-    }else{
-      router.push('/signup/patient')
-    }
-  } 
 
 const DoctorListPage = () => {
   const searchParams = useSearchParams();
@@ -51,6 +40,18 @@ const DoctorListPage = () => {
   });
 
   const [showFilters, setShowFilters] = useState(false);
+  const { isAuthenticated } = userAuthStore();
+  const router = useRouter();
+
+  const handleBooking = (doctorId: string) => {
+    if (isAuthenticated) {
+      router.push(`/patient/booking/${doctorId}`);
+    } else {
+      router.push("/signup/patient"); 
+      // or "/login" depending on your app
+    }
+  };
+
 
   useEffect(() => {
     fetchDoctors(filters);
@@ -364,15 +365,16 @@ const DoctorListPage = () => {
                   </div>
 
            
+              
+            <div className="mt-auto">
+                  <Button
+                    onClick={() => handleBooking(doctor._id)}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 text-sm font-medium shadow-lg hover:shadow-xl transition-all"
+                  >
+                    Book Appointment
+                  </Button>
+              </div>
 
-                  <div className="mt-auto">
-                    <Link href={`/patient/booking/${doctor._id}`} className="block">
-                    <Button onClick={DoctorBooking} className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg ply-2 text-sm font-medium shadow-lg hover:shadow-xl transition-all">
-                        Book Appointment
-                    </Button>
-                    </Link>
-
-                  </div>
                 </CardContent>
               </Card>
             ))}
