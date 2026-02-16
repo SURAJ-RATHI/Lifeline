@@ -91,70 +91,70 @@ export const specializations = [
       rating: 5,
       text: "Booked a dermatology consult in minutes and got a clear prescription on video. The doctor even suggested affordable medicines from local pharmacies.",
       author: "Aarav Sharma",
-      location: "Mumbai, Maharashtra · Bhiwani, Haryana",
+      location: "Mumbai, Maharashtra ",
       bgColor: "bg-chart-1/10"
     },
     {
       rating: 5,
       text: "My mother needed a cardiology follow-up. Lifeline arranged a bilingual doctor who patiently explained every report in Hindi.",
       author: "Ananya Iyer",
-      location: "Bengaluru, Karnataka · Bhiwani, Haryana",
+      location: "Bengaluru, Karnataka ",
       bgColor: "bg-chart-2/10"
     },
     {
       rating: 5,
       text: "I connected with a pediatrician late at night when my son had fever. Got quick guidance and an e-prescription without stepping out.",
       author: "Rohan Verma",
-      location: "Noida, Uttar Pradesh · Bhiwani, Haryana",
+      location: "Noida, Uttar Pradesh ",
       bgColor: "bg-chart-3/10"
     },
     {
       rating: 4,
       text: "Video call was crystal clear and the doctor shared diet changes that matched our Gujarati meals. Follow-up reminders were helpful.",
       author: "Meera Joshi",
-      location: "Ahmedabad, Gujarat · Bhiwani, Haryana",
+      location: "Ahmedabad, Gujarat ",
       bgColor: "bg-chart-4/10"
     },
     {
       rating: 5,
       text: "Got a physiotherapy plan after my marathon. The doctor shared exercise videos and tracked progress on WhatsApp.",
       author: "Arjun Nair",
-      location: "Kochi, Kerala · Bhiwani, Haryana",
+      location: "Kochi, Kerala ",
       bgColor: "bg-chart-5/10"
     },
     {
       rating: 5,
       text: "Prescription arrived instantly on email and SMS. Billing support even applied my corporate insurance without hassle.",
       author: "Priya Kulkarni",
-      location: "Pune, Maharashtra · Bhiwani, Haryana",
+      location: "Pune, Maharashtra ",
       bgColor: "bg-chart-6/10"
     },
     {
       rating: 4,
       text: "App reminded me about hydration, medicines, and lab tests. Loved the culturally relevant wellness tips during Navratri fasting.",
       author: "Devanshi Patel",
-      location: "Vadodara, Gujarat · Bhiwani, Haryana",
+      location: "Vadodara, Gujarat ",
       bgColor: "bg-chart-7/10"
     },
     {
       rating: 5,
       text: "Doctor shared a Hindi summary for my father so he felt confident about the treatment plan. Truly patient friendly.",
       author: "Kabir Bansal",
-      location: "New Delhi · Bhiwani, Haryana",
+      location: "New Delhi ",
       bgColor: "bg-chart-8/10"
     },
     {
       rating: 5,
       text: "I manage diabetes remotely while working in Hyderabad. Regular follow-ups and lab tracking keep my HbA1c steady.",
       author: "Sneha Menon",
-      location: "Hyderabad, Telangana · Bhiwani, Haryana",
+      location: "Hyderabad, Telangana ",
       bgColor: "bg-chart-9/10"
     },
     {
       rating: 5,
       text: "Scheduling for my clinic staff was easy, and the doctor suggested immunity boosters using ingredients we actually get in Jaipur.",
       author: "Vikram Singh",
-      location: "Jaipur, Rajasthan · Bhiwani, Haryana",
+      location: "Jaipur, Rajasthan ",
       bgColor: "bg-chart-10/10"
     }
   ];
