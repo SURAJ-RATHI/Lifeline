@@ -63,8 +63,9 @@ Full-stack telemedicine platform tailored for Indian patients and clinicians. It
 
 ## Developer Reference
 - **Developer:** SURAJ-RATHI
-- **GitHub:** [suraj127021](https://github.com/suraj127021)
-- **LinkedIn:** [suraj127021](https://www.linkedin.com/in/suraj127021)
+- **GitHub:** [SURAJ-RATHI](https://github.com/suraj127021)
+- **LinkedIn:** [Suraj Rathi](https://www.linkedin.com/in/surajrathi-dev/)
+- **Portfolio:** [Suraj Rathi](https://surajrathi.vercel.app/)
 
 Reach out for collaboration, issue reporting, or deployment guidance.
 
